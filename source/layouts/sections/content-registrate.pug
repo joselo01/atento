@@ -1,0 +1,118 @@
+.container
+    .form-registro
+        form
+            .row
+                .complete-data
+                    |Completa estos datos:
+                .title-register
+                    |DATOS 
+                    span PERSONALES
+                .col-md-6
+                    .form-group
+                            label Tipo Documento
+                            select(class="form-control")
+                                option(value="selected") Seleccione
+                                option(value="1") 1
+                    .form-group
+                            label ¿Cuál es tu apellido paterno?
+                            input(type="text" class="form-control" placeholder="Ingresa apellido paterno" requerid)
+                    .form-group
+                            label ¿Cuál es tu nombre?
+                            input(type="text" class="form-control" placeholder="Ingresa tu nombre" requerid)
+                    .form-group
+                        .row
+                            .col-md-12
+                                label ¿Cuándo naciste?
+                            .col-md-4
+                                label Día
+                                select(class="form-control")
+                                    option(value="selected") Día
+                                    option(value="1") 1
+                            .col-md-4
+                                label Mes
+                                select(class="form-control")
+                                    option(value="selected") Mes
+                                    option(value="1") 1
+
+                            .col-md-4
+                                label Año
+                                select(class="form-control")
+                                    option(value="selected") Año
+                                    option(value="1") 1
+                        
+                .col-md-6
+                    .form-group
+                        label ¿Cuál es tu número de Doc de identidad?
+                        input(type="text" class="form-control" placeholder="Ingresa tu número de DNI" requerid)
+                    .form-group
+                        label ¿Cuál es tu apellido materno?
+                        input(type="text" class="form-control" placeholder="Ingresa apellido materno" requerid)
+                    .form-group
+                        label Sexo
+                        select(class="form-control")
+                            option(value="selected") Seleccione
+                            option(value="1") 1
+            .row
+                .title-register
+                    |DATOS 
+                    span DE CONTACTO
+                .col-md-6
+                    .form-group
+                        label ¿Cuál es tu número de teléfono móvil?
+                        input(type="tel" class="form-control" placeholder="Escribe tu número de celular" requerid)
+                    .form-group
+                        label ¿Cuál es tu correo?
+                        input(type="email" class="form-control" placeholder="Ingresa tu correo" requerid)
+                .col-md-6
+                    .form-group
+                        label ¿Cuál es tu número de teléfono fijo?
+                        input(type="tel" class="form-control" placeholder="Escribe tu número de telf. fijo"  requerid)
+            .row
+                .col-md-12
+                    .form-group
+                        label ¿Cuál es tu dirección?
+                        textarea(class="form-control" rows="4" placeholder="Ingresa tu dirección")
+                    .form-group
+                        .row
+                            .col-md-6
+                                .row
+                                    .col-md-12
+                                        label ¿Dónde vives?
+                                    .col-md-4
+                                        label Departamento
+                                        select(class="form-control")
+                                            option(value="selected") Departamento
+                                            option(value="1") 1
+                                    .col-md-4
+                                        label Provincia
+                                        select(class="form-control")
+                                            option(value="selected") Provincia
+                                            option(value="1") 1
+
+                                    .col-md-4
+                                        label Distrito
+                                        select(class="form-control")
+                                            option(value="selected") Distrito
+                                            option(value="1") 1                            
+                            .col-md-6
+            .row
+                .title-register
+                    |CONTRASEÑA
+                .col-md-6
+                    .form-group
+                        label Ingresa tu contraseña (mínimo 5 caracteres)
+                        input(type="password" class="form-control" placeholder="Ingresa contraseña" requerid)
+                .col-md-6
+                    .form-group
+                        label Repite tu contraseña (mínimo 5 caracteres)
+                        input(type="password" class="form-control" placeholder="Repite contraseña" requerid)
+            .row
+                .col-md-12
+                    .form-group
+                        label(for="")
+                            input(type="checkbox" value="")
+                            |He leído y acepto los términos y condiciones
+            .row
+                .col-md-12
+                    .content-button
+                        button(type="button" class="btn btn-primary") Continuar

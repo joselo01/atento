@@ -1,0 +1,64 @@
+.container
+    .form-registro
+        form
+            .row
+                .title-register
+                    |ESTUDIOS
+                .col-md-12
+                    .form-group
+                            label ¿En qué nivel estas?
+                            ul(class="progressbar")
+                                li 
+                                li Secundaria
+                                li Técnico
+                                li Universitario
+                            
+                    
+                    .form-group
+                            label Carrera
+                            select(class="form-control")
+                                option(value="selected") Profesión
+                                option(value="1") 1
+                    .form-group
+                            label Centro de estudios
+                            input(type="text" class="form-control" placeholder="Ingresa tu centro de estudios" requerid)
+                    .form-group
+                            label ¿En qué estado estás?
+                            ul(class="progressbar")
+                                li 
+                                li Trunco
+                                li En curso
+                                li Terminado
+                            
+
+            .row
+                .title-register
+                    |EXPERIENCIA  
+                    span LABORAL
+                .col-md-12
+                    .form-group
+                        label ¿Tienes experiencia laboral?
+                        
+                        .row
+                            .col-md-8
+                                a(href="#" class="badges") Atención al cliente
+                                a(href="#" class="badges") Help Desk / Sporte técnico
+                                a(href="#" class="badges") Cobranzas
+                                a(href="#" class="badges") Otros / Administrativo
+                                a(href="#" class="badges") Televendedor
+                                a(href="#" class="badges") Ventas
+                                a(href="#" class="badges") Ventas presenciales
+                        
+                    .form-group
+                        label ¿Cuál es tu disponibilidad de tiempo para trabajar?
+                        .row
+                            .col-md-8
+                                a(href="#" class="badges") Tiempo Completo
+                                a(href="#" class="badges") Medio Tiempo
+                        
+                    
+            .row
+                .col-md-12
+                    .content-button
+                        button(type="button" class="btn btn-primary secundary") Atrás
+                        button(type="button" class="btn btn-primary") Grabar
