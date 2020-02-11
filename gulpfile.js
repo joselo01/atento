@@ -130,9 +130,8 @@ gulp.task("fonts", function() {
 gulp.task("plugins", function() {
   gulp
     .src([
-      /* "./source/javascript/plugins/jquery.js",
-      "./source/javascript/plugins/tinynav.min.js",
-      "./source/javascript/plugins/jquery.flexslider-min.js" */
+      "./source/javascript/plugins/jquery.js",
+      "./node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"
     ])
     .pipe(concat("vendor_all.js"))
     .pipe(

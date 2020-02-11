@@ -6415,3 +6415,117 @@ ul {
   font-weight: 400;
   color: #fd5800;
   font-size: 16px; }
+
+.content-left {
+  padding: 90px 40px; }
+  .content-left .unete {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #fd5800;
+    font-size: 45px;
+    line-height: 50px; }
+    .content-left .unete span {
+      display: block;
+      font-weight: 700; }
+  .content-left .trabaja-nosotros {
+    font-size: 22px;
+    font-weight: 300;
+    color: #fd5800;
+    margin: 25px 0; }
+
+.content-right {
+  position: relative; }
+  .content-right .btn-postula {
+    width: 195px;
+    height: 60px;
+    border-radius: 50px;
+    background: #fd5800;
+    text-align: center;
+    position: absolute;
+    line-height: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    bottom: 110px;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15); }
+    .content-right .btn-postula a {
+      color: white;
+      text-decoration: none;
+      display: block; }
+
+.conocenos {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #004475;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: -90px;
+  letter-spacing: 1.5px; }
+  .conocenos::after {
+    content: "";
+    background: url("../images/icono_mas.png") no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 10px auto; }
+
+.pie {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 40px 40px 60px 0; }
+
+.list {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  width: 50%;
+  margin: 60px 0; }
+  .list li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #004475;
+    text-align: center;
+    letter-spacing: 1.5px;
+    display: block;
+    text-align: left;
+    line-height: 40px; }
+    .list li::before {
+      content: "";
+      background: url("../images/icono_title.png") no-repeat;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px; }
+    .list li:nth-child(2) {
+      padding-left: 15px; }
+    .list li:nth-child(4) {
+      padding-left: 15px; }
+
+.btn-ver-empleos {
+  padding: 8px;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  border-radius: 20px;
+  background: #fd5800;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  display: block;
+  color: white !important;
+  text-decoration: none !important; }
