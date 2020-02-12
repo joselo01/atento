@@ -22,9 +22,47 @@
                 #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
                     .modal-dialog(role='document')
                         .modal-content
-                            .modal-header
-                                button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                    span(aria-hidden='true') ×
-                                h4#myModalLabel.modal-title Modal title
+                            //- .modal-header
+                            //-     button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            //-         span(aria-hidden='true') ×
                             .modal-body
-                                | ...
+                                div
+                                    // Nav tabs
+                                    ul.nav.nav-tabs(role='tablist')
+                                        li(role='presentation')
+                                            a(href='#registro', aria-controls='registro', role='tab', data-toggle='tab') Registrate
+                                        li.active(role='presentation')
+                                            a(href='#login', aria-controls='login', role='tab', data-toggle='tab') Iniciar sesión
+                                       
+                                    // Tab panes
+                                    .tab-content
+                                        .mensaje
+                                            img(src="images/bienvenido-a-la-familia-atento.png")
+                                        #registro.tab-pane(role='tabpanel') 
+                                         form(class="form")
+                                            .form-group
+                                                input.form-control(type='text', placeholder='Nombres y Apellido')
+                                            .form-group
+                                                input.form-control(type='text', placeholder='DNI')
+                                            .form-group
+                                                input.form-control(type='tel', placeholder='Celular')
+                                            .form-group
+                                                input.form-control(type='email', placeholder='Correo')
+                                            .form-group
+                                                input.form-control(type='password', placeholder='Contraseña')
+                                            button.btn.btn-default(type='submit') Regístrate
+                                        #login.tab-pane.active(role='tabpanel') 
+                                         form(class="form")
+                                            .form-group
+                                                |Ingresa con tu DNI
+                                            .form-group
+                                                input.form-control(type='text', placeholder='DNI')
+                                            .form-group
+                                                input.form-control(type='password', placeholder='Contraseña')
+                                            .spacer
+                                            button.btn.btn-default(type='submit') Ingresar
+                                            .checkbox
+                                                label
+                                                    input(type='checkbox')
+                                                    |  Recordar mis datos
+                                            a(href="#") Olvide mi contraseña

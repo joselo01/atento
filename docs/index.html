@@ -57,11 +57,57 @@
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  <div class="modal-body">
+                    <div>
+                      <!-- Nav tabs-->
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation"><a href="#registro" aria-controls="registro" role="tab" data-toggle="tab">Registrate</a></li>
+                        <li class="active" role="presentation"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Iniciar sesión</a></li>
+                      </ul>
+                      <!-- Tab panes-->
+                      <div class="tab-content">
+                        <div class="mensaje"><img src="images/bienvenido-a-la-familia-atento.png"></div>
+                        <div class="tab-pane" id="registro" role="tabpanel"> 
+                          <form class="form">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Nombres y Apellido">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="DNI">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="tel" placeholder="Celular">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="email" placeholder="Correo">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="password" placeholder="Contraseña">
+                            </div>
+                            <button class="btn btn-default" type="submit">Regístrate</button>
+                          </form>
+                        </div>
+                        <div class="tab-pane active" id="login" role="tabpanel"> 
+                          <form class="form">
+                            <div class="form-group">Ingresa con tu DNI</div>
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="DNI">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="password" placeholder="Contraseña">
+                            </div>
+                            <div class="spacer"></div>
+                            <button class="btn btn-default" type="submit">Ingresar</button>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Recordar mis datos
+                              </label>
+                            </div><a href="#">Olvide mi contraseña</a>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="modal-body">...</div>
                 </div>
               </div>
             </div>

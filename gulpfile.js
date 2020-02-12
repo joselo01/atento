@@ -49,7 +49,7 @@ gulp.task("javascript", function() {
     )
     // .pipe(concat('bundle.js') )
     .pipe(entorno ? uglify({ compress: { drop_console: true } }) : gutil.noop())
-    .pipe(gulp.dest("dist/js/"))
+    .pipe(gulp.dest("docs/js/"))
     .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -78,7 +78,7 @@ gulp.task("sass", function() {
         cascade: false
       })
     )
-    .pipe(gulp.dest("./dist/css"))
+    .pipe(gulp.dest("./docs/css"))
     .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -86,14 +86,14 @@ gulp.task("templates", function() {
   gulp
     .src("./source/layouts/*.pug")
     .pipe(plumber())
-    .pipe(changed("./dist"))
+    .pipe(changed("./docs"))
     .pipe(
       pug({
         data: locals,
         pretty: true
       })
     )
-    .pipe(gulp.dest("./dist"))
+    .pipe(gulp.dest("./docs"))
     .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -118,13 +118,13 @@ gulp.task("images", function() {
         ]
       })
     )
-    .pipe(gulp.dest("dist/images/"));
+    .pipe(gulp.dest("docs/images/"));
 });
 
 gulp.task("fonts", function() {
   gulp
     .src(["source/fonts/**/*.{eot,svg,ttf,woff,woff2}"])
-    .pipe(gulp.dest("dist/fonts/"));
+    .pipe(gulp.dest("docs/fonts/"));
 });
 
 gulp.task("plugins", function() {
@@ -141,7 +141,7 @@ gulp.task("plugins", function() {
         }
       })
     )
-    .pipe(gulp.dest("dist/js/vendor"))
+    .pipe(gulp.dest("docs/js/vendor"))
     .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -158,13 +158,13 @@ gulp.task("serve", function() {
   if (entorno === undefined || entorno === null) {
     browserSync.init({
       open: true,
-      server: "./dist",
+      server: "./docs",
       port: 3030
     });
   } else {
     browserSync.init({
       open: false,
-      server: "./dist",
+      server: "./docs",
       port: 3030
     });
   }

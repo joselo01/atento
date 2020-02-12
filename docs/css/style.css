@@ -6544,4 +6544,81 @@ ul {
 .modal-dialog {
   display: inline-block;
   text-align: left;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: auto; }
+
+.modal-body {
+  overflow-y: auto;
+  height: auto;
+  background: url("../images/fondo_popup.png") repeat left bottom;
+  background-size: cover; }
+
+.nav-tabs {
+  border-bottom: 0;
+  display: table;
+  margin: 10px auto 10px auto; }
+
+.nav > li {
+  width: auto;
+  height: 40px;
+  text-align: center; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background: #14395e;
+  color: white;
+  border: 1px solid #14395e; }
+
+.nav-tabs > li > a {
+  margin-right: 0px;
+  line-height: 1.42857;
+  border: 1px dotted #fd5800;
+  color: #fd5800;
+  border-radius: 0px; }
+
+.nav > li > a {
+  padding: 10px 55px; }
+
+@media (max-width: 768px) {
+  .nav > li > a {
+    padding: 10px 29.5px; } }
+
+.tab-content .mensaje {
+  margin: 20px 0 40px 0; }
+
+.tab-content .tab-pane {
+  padding: 0 35px; }
+
+.tab-content .form {
+  padding: 0 45px 45px 45px; }
+  .tab-content .form .btn.btn-default {
+    width: 100%;
+    border-radius: 0;
+    background: #13385e;
+    border: 0;
+    color: white;
+    height: 43px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif; }
+  .tab-content .form .spacer {
+    height: 54px; }
+  .tab-content .form label {
+    margin: 6px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fd5800; }
+  .tab-content .form .checkbox {
+    margin-bottom: 0; }
+  .tab-content .form a {
+    text-decoration: underline;
+    font-size: 13px; }
+
+.tab-content .form-group {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fd5800;
+  margin-bottom: 20px; }
+  .tab-content .form-group input {
+    border-radius: 0;
+    border: 2px double #fd5800; }
