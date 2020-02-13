@@ -6036,6 +6036,9 @@ ul {
     width: 24px;
     height: 24px;
     margin-right: 15px; }
+  @media (max-width: 768px) {
+    .content-work-available .title-works {
+      margin: 25px 0 0 0; } }
 
 .content-work-available .block-banner {
   height: 195px;
@@ -6091,6 +6094,11 @@ ul {
       line-height: 45px;
       padding: 5px 25px;
       border-bottom: 1px solid #fd5800; }
+      @media (max-width: 768px) {
+        .content-work-available .grid-work-available .content-my-applications .my-applications {
+          padding: 5px 10px;
+          font-size: 20px;
+          margin-bottom: 40px; } }
       .content-work-available .grid-work-available .content-my-applications .my-applications:after {
         content: "";
         border-bottom: none;
@@ -6156,6 +6164,9 @@ ul {
         display: block;
         color: white;
         text-decoration: none; }
+  @media (max-width: 768px) {
+    .content-work-available .grid-work-available {
+      padding: 0 !important; } }
 
 .content-work-available.postulaciones-detalle {
   clear: both; }
@@ -6163,6 +6174,9 @@ ul {
     padding: 30px;
     float: left;
     margin-top: 0 !important; }
+    @media (max-width: 768px) {
+      .content-work-available.postulaciones-detalle .content-my-applications {
+        padding: 20px; } }
   .content-work-available.postulaciones-detalle .my-applications {
     height: auto !important;
     line-height: 35px !important;
@@ -6206,9 +6220,20 @@ ul {
       float: right !important;
       width: 15% !important;
       border-radius: 10px !important; }
+      @media (max-width: 768px) {
+        .content-work-available.postulaciones-detalle .recent .btn-ver-empleos {
+          float: none !important;
+          width: auto !important; } }
+    @media (max-width: 768px) {
+      .content-work-available.postulaciones-detalle .recent {
+        padding: 0 !important; } }
+  @media (max-width: 768px) {
+    .content-work-available.postulaciones-detalle {
+      padding: 20px !important; } }
 
 .content-work-available.mi-perfil .my-applications {
-  font-size: 17px !important; }
+  font-size: 17px !important;
+  margin-bottom: 0 !important; }
 
 .content-work-available.mi-perfil .my-applications::after {
   background: none !important; }
@@ -6228,6 +6253,12 @@ ul {
   .content-work-available.mi-perfil .search .input-group {
     display: block;
     width: 83%; }
+    @media (max-width: 768px) {
+      .content-work-available.mi-perfil .search .input-group {
+        width: 88%; } }
+  @media (max-width: 768px) {
+    .content-work-available.mi-perfil .search .input-group-btn {
+      width: auto; } }
   .content-work-available.mi-perfil .search .input-group-btn .btn-default {
     width: 44px;
     height: 34px !important;
@@ -6239,6 +6270,10 @@ ul {
 .content-work-available.mi-perfil .input-group .form-control {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px; }
+
+@media (max-width: 768px) {
+  .content-work-available.mi-perfil {
+    padding: 10px 30px 30px 30px; } }
 
 /* REGISTRO */
 .header-registro {
@@ -6253,6 +6288,10 @@ ul {
     font-size: 35px;
     color: #fd5800;
     position: relative; }
+    @media (max-width: 768px) {
+      .header-registro .title-registrate {
+        padding: 50px;
+        font-size: 20px; } }
 
 .logo-registro {
   height: 130px;
@@ -6265,6 +6304,9 @@ ul {
 
 .form-registro {
   padding-bottom: 60px; }
+  @media (max-width: 768px) {
+    .form-registro {
+      padding: 0 50px; } }
   .form-registro .complete-data {
     padding: 10px 15px;
     font-family: "Roboto", sans-serif;
@@ -6302,6 +6344,9 @@ ul {
     font-size: 16px;
     margin: 15px 0;
     display: block; }
+    @media (max-width: 768px) {
+      .form-registro label {
+        font-size: 13px; } }
   .form-registro input {
     border-radius: 0 !important;
     border: 1px solid #fd5800; }
@@ -6319,6 +6364,9 @@ ul {
   .form-registro .content-button {
     text-align: center;
     margin: 30px 0; }
+    @media (max-width: 768px) {
+      .form-registro .content-button {
+        text-align: left; } }
     .form-registro .content-button .btn-primary {
       font-family: "Roboto", sans-serif;
       font-weight: 400;
@@ -6330,6 +6378,10 @@ ul {
         background: #a09f9f;
         border: 1px solid #a09f9f;
         margin-right: 10px; }
+      @media (max-width: 768px) {
+        .form-registro .content-button .btn-primary {
+          width: 45%;
+          padding: 6px 0 !important; } }
   .form-registro .badges {
     background: #fd5800;
     padding: 10px 25px;
@@ -6408,6 +6460,10 @@ ul {
     margin-right: 10px;
     width: 24px;
     height: 24px; }
+  @media (max-width: 768px) {
+    .message-gracias {
+      width: 100%;
+      font-size: 25px; } }
 
 .txt-gracias {
   text-align: center;
@@ -6622,3 +6678,22 @@ ul {
   .tab-content .form-group input {
     border-radius: 0;
     border: 2px double #fd5800; }
+
+@media (max-width: 768px) {
+  .navbar-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 !important;
+    padding: 15px !important; }
+  .form-group {
+    margin: 0 5px 0 0 !important; }
+  .btn-right {
+    float: none; } }
