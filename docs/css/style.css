@@ -6279,7 +6279,10 @@ ul {
 .header-registro {
   background: url("../images/bg_header.png") no-repeat;
   height: 257px;
-  background-size: cover; }
+  background-size: 100%; }
+  @media (max-width: 768px) {
+    .header-registro {
+      height: auto; } }
   .header-registro .title-registrate {
     padding: 20px 0px;
     margin: 20px 0;
@@ -6290,23 +6293,39 @@ ul {
     position: relative; }
     @media (max-width: 768px) {
       .header-registro .title-registrate {
-        padding: 50px;
-        font-size: 20px; } }
+        padding: 0 35px;
+        font-size: 18px; } }
+    @media (max-width: 360px) {
+      .header-registro .title-registrate {
+        padding: 0; } }
 
 .logo-registro {
   height: 130px;
   display: table;
   width: 100%; }
+  @media (max-width: 768px) {
+    .logo-registro {
+      height: 85px; } }
   .logo-registro .logo-blanco {
     text-align: right;
     display: table-cell;
     vertical-align: middle; }
+    @media (max-width: 768px) {
+      .logo-registro .logo-blanco {
+        vertical-align: top; } }
+    @media (max-width: 768px) {
+      .logo-registro .logo-blanco img {
+        max-width: none;
+        width: 25%; } }
+  @media (max-width: 360px) {
+    .logo-registro {
+      height: 50px; } }
 
 .form-registro {
   padding-bottom: 60px; }
   @media (max-width: 768px) {
     .form-registro {
-      padding: 0 50px; } }
+      padding: 0 35px; } }
   .form-registro .complete-data {
     padding: 10px 15px;
     font-family: "Roboto", sans-serif;
@@ -6434,6 +6453,9 @@ ul {
     border-color: #55b776; }
   .form-registro .progressbar li.active + li:after {
     background-color: #55b776; }
+  @media (max-width: 360px) {
+    .form-registro {
+      padding: 0; } }
 
 .img-gracias {
   text-align: center; }

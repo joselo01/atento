@@ -560,7 +560,10 @@ ul {
 .header-registro {
   background: url("../images/bg_header.png") no-repeat;
   height: 257px;
-  background-size: cover;
+  @include tablet {
+    height: auto;
+  }
+  background-size: 100%;
   .title-registrate {
     padding: 20px 0px;
     margin: 20px 0;
@@ -570,27 +573,45 @@ ul {
     color: #fd5800;
     position: relative;
     @include tablet {
-      padding: 50px;
-      font-size: 20px;
+      padding: 0 35px;
+      font-size: 18px;
+    }
+    @include mobile {
+      padding: 0;
     }
   }
 }
 
 .logo-registro {
   height: 130px;
+  @include tablet {
+    height: 85px;
+  }
   display: table;
   width: 100%;
   .logo-blanco {
     text-align: right;
     display: table-cell;
     vertical-align: middle;
+    @include tablet {
+      vertical-align: top;
+    }
+    @include tablet {
+      img {
+        max-width: none;
+        width: 25%;
+      }
+    }
+  }
+  @include mobile {
+    height: 50px;
   }
 }
 
 .form-registro {
   padding-bottom: 60px;
   @include tablet {
-    padding: 0 50px;
+    padding: 0 35px;
   }
   .complete-data {
     padding: 10px 15px;
@@ -743,6 +764,9 @@ ul {
   }
   .progressbar li.active + li:after {
     background-color: #55b776;
+  }
+  @include mobile {
+    padding: 0;
   }
 }
 
