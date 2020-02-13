@@ -6496,6 +6496,10 @@ ul {
 
 .content-left {
   padding: 90px 40px; }
+  @media (max-width: 768px) {
+    .content-left {
+      text-align: center;
+      padding: 30px; } }
   .content-left .unete {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -6510,6 +6514,9 @@ ul {
     font-weight: 300;
     color: #fd5800;
     margin: 25px 0; }
+    @media (max-width: 768px) {
+      .content-left .trabaja-nosotros {
+        margin: 20px 0; } }
 
 .content-right {
   position: relative; }
@@ -6532,6 +6539,17 @@ ul {
       color: white;
       text-decoration: none;
       display: block; }
+    @media (max-width: 768px) {
+      .content-right .btn-postula {
+        left: 37%;
+        bottom: 95px; } }
+    @media (max-width: 425px) {
+      .content-right .btn-postula {
+        left: 25%;
+        bottom: 40px; } }
+    @media (max-width: 360px) {
+      .content-right .btn-postula {
+        left: 15%; } }
 
 .conocenos {
   font-family: "Roboto", sans-serif;
@@ -6550,6 +6568,9 @@ ul {
     height: 24px;
     display: block;
     margin: 10px auto; }
+  @media (max-width: 768px) {
+    .conocenos {
+      left: 0; } }
 
 .pie {
   display: -webkit-box;
@@ -6563,6 +6584,9 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 40px 40px 60px 0; }
+  @media (max-width: 768px) {
+    .pie {
+      padding: 40px 20px 60px 20px; } }
 
 .list {
   -webkit-column-count: 2;
@@ -6570,6 +6594,9 @@ ul {
   column-count: 2;
   width: 50%;
   margin: 60px 0; }
+  @media (max-width: 768px) {
+    .list {
+      width: 100%; } }
   .list li {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -6580,6 +6607,12 @@ ul {
     display: block;
     text-align: left;
     line-height: 40px; }
+    @media (max-width: 425px) {
+      .list li {
+        font-size: 16px; } }
+    @media (max-width: 360px) {
+      .list li {
+        font-size: 13px; } }
     .list li::before {
       content: "";
       background: url("../images/icono_title.png") no-repeat;
@@ -6665,9 +6698,15 @@ ul {
 
 .tab-content .tab-pane {
   padding: 0 35px; }
+  @media (max-width: 768px) {
+    .tab-content .tab-pane {
+      padding: 0; } }
 
 .tab-content .form {
   padding: 0 45px 45px 45px; }
+  @media (max-width: 768px) {
+    .tab-content .form {
+      padding: 0 10px 45px 10px; } }
   .tab-content .form .btn.btn-default {
     width: 100%;
     border-radius: 0;
@@ -6700,6 +6739,9 @@ ul {
   .tab-content .form-group input {
     border-radius: 0;
     border: 2px double #fd5800; }
+  @media (max-width: 768px) {
+    .tab-content .form-group {
+      margin-bottom: 20px !important; } }
 
 @media (max-width: 768px) {
   .navbar-form {
