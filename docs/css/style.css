@@ -5906,12 +5906,18 @@ ul {
   background: #ffffff url("../images/forma-cuadro_mispostulaciones.png") no-repeat top left;
   background-size: contain;
   padding: 25px; }
+  @media (max-width: 360px) {
+    .content-postulant {
+      padding: 25px 20px; } }
   .content-postulant .image-postulant {
     width: 100%;
     text-align: center; }
   .content-postulant .info-postulant {
     text-align: center;
     padding: 0 20px; }
+    @media (max-width: 360px) {
+      .content-postulant .info-postulant {
+        padding: 0; } }
     .content-postulant .info-postulant .name-postulant {
       margin: 30px 0;
       font-family: "Roboto", sans-serif;
@@ -5927,6 +5933,9 @@ ul {
         font-weight: 400;
         font-size: 16px;
         color: #fd5800; }
+        @media (max-width: 360px) {
+          .content-postulant .info-postulant .data-postulant li {
+            font-size: 15px; } }
         .content-postulant .info-postulant .data-postulant li.email:before {
           content: "";
           background: url("../images/icono_email.png") no-repeat 0 0;
@@ -5973,6 +5982,9 @@ ul {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 12px; }
+        @media (max-width: 360px) {
+          .content-postulant .info-postulant .btn-info-postulant a {
+            font-size: 11px; } }
 
 .content-my-applications {
   border: solid 1px #fd5800;
@@ -6088,6 +6100,9 @@ ul {
     width: 100%;
     margin-top: 25px;
     background: #ffffff; }
+    @media (max-width: 360px) {
+      .content-work-available .grid-work-available .content-my-applications {
+        margin: 25px 0; } }
     .content-work-available .grid-work-available .content-my-applications .my-applications {
       font-family: "Roboto", sans-serif;
       font-weight: 400;
@@ -6103,6 +6118,10 @@ ul {
           padding: 5px 10px;
           font-size: 20px;
           margin-bottom: 40px; } }
+      @media (max-width: 360px) {
+        .content-work-available .grid-work-available .content-my-applications .my-applications {
+          margin-bottom: 0px;
+          font-size: 16px !important; } }
       .content-work-available .grid-work-available .content-my-applications .my-applications:after {
         content: "";
         border-bottom: none;
@@ -6168,6 +6187,9 @@ ul {
         display: block;
         color: white;
         text-decoration: none; }
+        @media (max-width: 360px) {
+          .content-work-available .grid-work-available .content-my-applications .recent .btn-ver-empleos {
+            width: 50%; } }
   @media (max-width: 768px) {
     .content-work-available .grid-work-available {
       padding: 0 !important; } }
@@ -6180,11 +6202,11 @@ ul {
     margin-top: 0 !important; }
     @media (max-width: 768px) {
       .content-work-available.postulaciones-detalle .content-my-applications {
-        padding: 20px; } }
+        padding: 20px 10px; } }
   .content-work-available.postulaciones-detalle .my-applications {
     height: auto !important;
     line-height: 35px !important;
-    font-size: 22px !important; }
+    font-size: 21px !important; }
     .content-work-available.postulaciones-detalle .my-applications .name-province-detalle {
       color: #000000;
       padding-left: 36px;
@@ -6211,6 +6233,10 @@ ul {
     color: #fd5800;
     margin-bottom: 20px;
     font-size: 16px; }
+    @media (max-width: 360px) {
+      .content-work-available.postulaciones-detalle h4 {
+        font-size: 15px;
+        line-height: 22px; } }
   .content-work-available.postulaciones-detalle p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -6233,7 +6259,7 @@ ul {
         padding: 0 !important; } }
   @media (max-width: 768px) {
     .content-work-available.postulaciones-detalle {
-      padding: 20px !important; } }
+      padding: 20px 10px !important; } }
 
 .content-work-available.mi-perfil .my-applications {
   font-size: 17px !important;
@@ -6259,7 +6285,13 @@ ul {
     width: 83%; }
     @media (max-width: 768px) {
       .content-work-available.mi-perfil .search .input-group {
-        width: 88%; } }
+        width: 100%; } }
+    @media (max-width: 425px) {
+      .content-work-available.mi-perfil .search .input-group {
+        width: 85%; } }
+    @media (max-width: 360px) {
+      .content-work-available.mi-perfil .search .input-group {
+        width: 83%; } }
   @media (max-width: 768px) {
     .content-work-available.mi-perfil .search .input-group-btn {
       width: auto; } }
@@ -6277,7 +6309,11 @@ ul {
 
 @media (max-width: 768px) {
   .content-work-available.mi-perfil {
-    padding: 10px 30px 30px 30px; } }
+    padding: 10px 10px 30px 10px; } }
+
+@media (max-width: 360px) {
+  .content-work-available.mi-perfil {
+    padding: 10px 10px 30px 10px; } }
 
 /* REGISTRO */
 .header-registro {
