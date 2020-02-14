@@ -6100,6 +6100,9 @@ ul {
     width: 100%;
     margin-top: 25px;
     background: #ffffff; }
+    @media (max-width: 425px) {
+      .content-work-available .grid-work-available .content-my-applications {
+        margin: 25px 0; } }
     @media (max-width: 360px) {
       .content-work-available .grid-work-available .content-my-applications {
         margin: 25px 0; } }
@@ -6118,6 +6121,10 @@ ul {
           padding: 5px 10px;
           font-size: 20px;
           margin-bottom: 40px; } }
+      @media (max-width: 425px) {
+        .content-work-available .grid-work-available .content-my-applications .my-applications {
+          margin-bottom: 0px;
+          font-size: 16px !important; } }
       @media (max-width: 360px) {
         .content-work-available .grid-work-available .content-my-applications .my-applications {
           margin-bottom: 0px;

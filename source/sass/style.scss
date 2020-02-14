@@ -349,6 +349,9 @@ ul {
       width: 100%;
 
       margin-top: 25px;
+      @include apaisada {
+        margin: 25px 0;
+      }
       @include mobile {
         margin: 25px 0;
       }
@@ -366,6 +369,10 @@ ul {
           padding: 5px 10px;
           font-size: 20px;
           margin-bottom: 40px;
+        }
+        @include apaisada {
+          margin-bottom: 0px;
+          font-size: 16px !important;
         }
         @include mobile {
           margin-bottom: 0px;
