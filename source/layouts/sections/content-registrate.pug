@@ -2,7 +2,7 @@
     .form-registro
         form
             .row
-                .title-register
+                .title-register(class="personales")
                     |DATOS 
                     span PERSONALES
                 .col-md-5
@@ -23,7 +23,10 @@
                             .col-md-12
                                 label Fecha de Nacimiento
                             .col-md-6
-                                input(type="text" class="form-control" requerid)
+                                .input-group.date(data-date-format='dd.mm.yyyy')
+                                    input.form-control(type='text' placeholder='dd.mm.yyyy')
+                                    .input-group-addon
+                                        span.glyphicon.glyphicon-th
                             
                         
                 .col-md-5
@@ -40,7 +43,7 @@
                             option(value="selected") Seleccione
                             option(value="1") 1
             .row
-                .title-register
+                .title-register(class="contacto")
                     |DATOS 
                     span DE CONTACTO
                 .col-md-5
@@ -83,7 +86,7 @@
                                             option(value="1") 1                            
                             .col-md-6
             .row
-                .title-register
+                .title-register(class="candado")
                     |CONTRASEÑA
                 .col-md-6
                     .form-group

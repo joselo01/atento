@@ -131,6 +131,7 @@ gulp.task("plugins", function() {
   gulp
     .src([
       "./source/javascript/plugins/jquery.js",
+      "./source/javascript/plugins/bootstrap-datepicker.min.js",
       "./node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"
     ])
     .pipe(concat("vendor_all.js"))

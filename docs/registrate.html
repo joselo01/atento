@@ -28,7 +28,7 @@
       <div class="form-registro">
         <form>
           <div class="row">
-            <div class="title-register">DATOS <span>PERSONALES</span></div>
+            <div class="title-register personales">DATOS <span>PERSONALES</span></div>
             <div class="col-md-5">
               <div class="form-group">
                 <label>Tipo Documento</label>
@@ -51,7 +51,10 @@
                     <label>Fecha de Nacimiento</label>
                   </div>
                   <div class="col-md-6">
-                    <input class="form-control" type="text" requerid>
+                    <div class="input-group date" data-date-format="dd.mm.yyyy">
+                      <input class="form-control" type="text" placeholder="dd.mm.yyyy">
+                      <div class="input-group-addon"><span class="glyphicon glyphicon-th"></span></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -75,7 +78,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="title-register">DATOS <span>DE CONTACTO</span></div>
+            <div class="title-register contacto">DATOS <span>DE CONTACTO</span></div>
             <div class="col-md-5">
               <div class="form-group">
                 <label>Móvil</label>
@@ -135,7 +138,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="title-register">CONTRASEÑA</div>
+            <div class="title-register candado">CONTRASEÑA</div>
             <div class="col-md-6">
               <div class="form-group">
                 <label>Nueva contraseña (mínimo 5 caracteres)</label>

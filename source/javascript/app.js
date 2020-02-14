@@ -9,4 +9,5 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).tab("show");
   });
+  $(".input-group.date").datepicker({ format: "dd.mm.yyyy" });
 });
