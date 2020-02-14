@@ -29,9 +29,9 @@
         <form>
           <div class="row">
             <div class="title-register">ESTUDIOS</div>
-            <div class="col-md-12">
+            <div class="col-md-9">
               <div class="form-group">
-                <label>¿En qué nivel estas?</label>
+                <label>Coméntanos tu nivel de estudios</label>
                 <ul class="progressbar">
                   <li> </li>
                   <li>Secundaria</li>
@@ -48,7 +48,24 @@
               </div>
               <div class="form-group">
                 <label>Centro de estudios</label>
-                <input class="form-control" type="text" placeholder="Ingresa tu centro de estudios" requerid>
+                <select class="form-control">
+                  <option value="selected">Ingresa tu centro de estudio</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Ciclo de estudios</label>
+                <select class="form-control">
+                  <option value="selected">Profesión</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Distrito centro de estudios</label>
+                <select class="form-control">
+                  <option value="selected">Ingresa el distrito de tu centro de estudios</option>
+                  <option value="1">1</option>
+                </select>
               </div>
               <div class="form-group">
                 <label>¿En qué estado estás?</label>
@@ -63,17 +80,35 @@
           </div>
           <div class="row">
             <div class="title-register">EXPERIENCIA  <span>LABORAL</span></div>
-            <div class="col-md-12">
+            <div class="col-md-9">
               <div class="form-group">
                 <label>¿Tienes experiencia laboral?</label>
                 <div class="row">
-                  <div class="col-md-8"><a class="badges" href="#">Atención al cliente</a><a class="badges" href="#">Help Desk / Sporte técnico</a><a class="badges" href="#">Cobranzas</a><a class="badges" href="#">Otros / Administrativo</a><a class="badges" href="#">Televendedor</a><a class="badges" href="#">Ventas</a><a class="badges" href="#">Ventas presenciales</a></div>
+                  <div class="col-md-9"><a class="badges" href="#">Atención al cliente</a><a class="badges" href="#">Cross-selling</a><a class="badges" href="#">Ventas</a><a class="badges" href="#">Cobranzas</a><a class="badges" href="#">Soporte Técnico</a><a class="badges" href="#">Back Office</a><a class="badges" href="#">Otros</a><a class="badges" href="#">sin experiencia</a></div>
                 </div>
               </div>
               <div class="form-group">
-                <label>¿Cuál es tu disponibilidad de tiempo para trabajar?</label>
+                <label>¿Tiempo de experiencia?</label>
+                <select class="form-control">
+                  <option value="selected">Seleccione</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="title-register">DISPONIBILIDAD  <span>LABORAL</span></div>
+            <div class="col-md-9">       
+              <div class="form-group">
+                <label>¿Cuál es tu disponibilidad de tiempo para trabajar con nosotros?</label>
                 <div class="row">
-                  <div class="col-md-8"><a class="badges" href="#">Tiempo Completo</a><a class="badges" href="#">Medio Tiempo</a></div>
+                  <div class="col-md-8"><a class="badges" href="#">Tiempo Completo</a><a class="badges" href="#">Tiempo Parcial</a></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>¿En qué sede te gustaría trabajar?</label>
+                <div class="row">
+                  <div class="col-md-8"><a class="badges" href="#">Ate</a><a class="badges" href="#">Callao</a><a class="badges" href="#">Trujillo</a></div>
                 </div>
               </div>
             </div>
@@ -81,6 +116,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="content-button">
+                <p>¿Listo para ser parte de la familia Atento? Dale grabar a tus datos</p>
                 <button class="btn btn-primary secundary" type="button">Atrás</button>
                 <button class="btn btn-primary" type="button">Grabar</button>
               </div>

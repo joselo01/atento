@@ -4,9 +4,9 @@
             .row
                 .title-register
                     |ESTUDIOS
-                .col-md-12
+                .col-md-9
                     .form-group
-                            label ¿En qué nivel estas?
+                            label Coméntanos tu nivel de estudios
                             ul(class="progressbar")
                                 li 
                                 li Secundaria
@@ -21,7 +21,19 @@
                                 option(value="1") 1
                     .form-group
                             label Centro de estudios
-                            input(type="text" class="form-control" placeholder="Ingresa tu centro de estudios" requerid)
+                            select(class="form-control")
+                                option(value="selected") Ingresa tu centro de estudio
+                                option(value="1") 1
+                    .form-group
+                            label Ciclo de estudios
+                            select(class="form-control")
+                                option(value="selected") Profesión
+                                option(value="1") 1
+                    .form-group
+                            label Distrito centro de estudios
+                            select(class="form-control")
+                                option(value="selected") Ingresa el distrito de tu centro de estudios
+                                option(value="1") 1
                     .form-group
                             label ¿En qué estado estás?
                             ul(class="progressbar")
@@ -35,30 +47,48 @@
                 .title-register
                     |EXPERIENCIA  
                     span LABORAL
-                .col-md-12
+                .col-md-9
                     .form-group
                         label ¿Tienes experiencia laboral?
                         
                         .row
-                            .col-md-8
+                            .col-md-9
                                 a(href="#" class="badges") Atención al cliente
-                                a(href="#" class="badges") Help Desk / Sporte técnico
-                                a(href="#" class="badges") Cobranzas
-                                a(href="#" class="badges") Otros / Administrativo
-                                a(href="#" class="badges") Televendedor
+                                a(href="#" class="badges") Cross-selling
                                 a(href="#" class="badges") Ventas
-                                a(href="#" class="badges") Ventas presenciales
-                        
+                                a(href="#" class="badges") Cobranzas
+                                a(href="#" class="badges") Soporte Técnico
+                                a(href="#" class="badges") Back Office
+                                a(href="#" class="badges") Otros
+                                a(href="#" class="badges") sin experiencia
                     .form-group
-                        label ¿Cuál es tu disponibilidad de tiempo para trabajar?
+                            label ¿Tiempo de experiencia?
+                            select(class="form-control")
+                                option(value="selected") Seleccione
+                                option(value="1") 1
+            .row
+                .title-register
+                    |DISPONIBILIDAD  
+                    span LABORAL
+                .col-md-9        
+                    .form-group
+                        label ¿Cuál es tu disponibilidad de tiempo para trabajar con nosotros?
                         .row
                             .col-md-8
                                 a(href="#" class="badges") Tiempo Completo
-                                a(href="#" class="badges") Medio Tiempo
+                                a(href="#" class="badges") Tiempo Parcial
+                    .form-group
+                        label ¿En qué sede te gustaría trabajar?
+                        .row
+                            .col-md-8
+                                a(href="#" class="badges") Ate
+                                a(href="#" class="badges") Callao
+                                a(href="#" class="badges") Trujillo
                         
                     
             .row
                 .col-md-12
                     .content-button
+                        p ¿Listo para ser parte de la familia Atento? Dale grabar a tus datos
                         button(type="button" class="btn btn-primary secundary") Atrás
                         button(type="button" class="btn btn-primary") Grabar
