@@ -1221,3 +1221,9 @@ ul {
     float: none;
   }
 }
+
+@include tablet {
+  .imagen {
+    margin: 40px 0;
+  }
+}

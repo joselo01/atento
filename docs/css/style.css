@@ -6873,3 +6873,7 @@ ul {
     margin: 0 5px 0 0 !important; }
   .btn-right {
     float: none; } }
+
+@media (max-width: 768px) {
+  .imagen {
+    margin: 40px 0; } }
