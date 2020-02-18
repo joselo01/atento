@@ -672,6 +672,9 @@ ul {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-size: 25px;
+    @include apaisada {
+      font-size: 18px;
+    }
     color: #004475;
     position: relative;
     span {
@@ -821,18 +824,27 @@ ul {
       padding: 10px 0;
     }
   }
-  .badges {
-    background: #fd5800;
-    padding: 10px 25px;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    color: white;
-    display: inline-block;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    text-decoration: none;
+  .content-bagdes {
+    display: flex;
+    flex-flow: row wrap;
+    .badges {
+      background: #fd5800;
+      padding: 10px 25px;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+      margin: 0 5px 5px 0;
+      width: 160px;
+      height: 40px;
+      overflow: hidden;
+      @include tablet {
+        width: 100%;
+        margin: 0 0 5px 0;
+      }
+    }
   }
 
   .progressbar {

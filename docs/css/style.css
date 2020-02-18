@@ -6387,6 +6387,9 @@ ul {
     font-size: 25px;
     color: #004475;
     position: relative; }
+    @media (max-width: 425px) {
+      .form-registro .title-register {
+        font-size: 18px; } }
     .form-registro .title-register span {
       font-weight: 300; }
     .form-registro .title-register:after {
@@ -6513,18 +6516,36 @@ ul {
       font-weight: 400;
       font-size: 16px;
       padding: 10px 0; }
-  .form-registro .badges {
-    background: #fd5800;
-    padding: 10px 25px;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    color: white;
-    display: inline-block;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    text-decoration: none; }
+  .form-registro .content-bagdes {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; }
+    .form-registro .content-bagdes .badges {
+      background: #fd5800;
+      padding: 10px 25px;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+      margin: 0 5px 5px 0;
+      width: 160px;
+      height: 40px;
+      overflow: hidden; }
+      @media (max-width: 768px) {
+        .form-registro .content-bagdes .badges {
+          width: 100%;
+          margin: 0 0 5px 0; } }
   .form-registro .progressbar {
     counter-reset: step; }
   .form-registro .progressbar li {
