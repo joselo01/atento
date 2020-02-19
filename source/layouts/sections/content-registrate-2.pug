@@ -8,12 +8,13 @@
                     .form-group
                             label Coméntanos tu nivel de estudios
                             ul(class="progressbar")
-                                li 
-                                li Secundaria
-                                li Técnico
-                                li Universitario
+                                li(class="hideSec") 
+                                li(class="active hideSec") Secundaria
+                                li(class="showSec") Técnico
+                                li(class="showSec") Universitario
                             
                     
+                .col-md-9(class="content-estudios")
                     .form-group
                             label Carrera
                             select(class="form-control")
@@ -33,10 +34,12 @@
                             label Distrito centro de estudios
                             select(class="form-control")
                                 option(value="selected") Ingresa el distrito de tu centro de estudios
-                                option(value="1") 1
+                                option(value="1") 1    
+            
+                .col-md-9
                     .form-group
                             label ¿En qué estado estás?
-                            ul(class="progressbar")
+                            ul(class="progressbar__estado")
                                 li 
                                 li Trunco
                                 li En curso
