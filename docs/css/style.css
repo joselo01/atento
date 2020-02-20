@@ -5948,9 +5948,9 @@ ul {
           margin-top: -5px; }
         .content-postulant .info-postulant .data-postulant li.date:before {
           content: "";
-          background: url("../images/icono_date.png") no-repeat 0 0;
-          width: 20px;
-          height: 22px;
+          background: url("../images/dni.png") no-repeat 0 0;
+          width: 22px;
+          height: 16px;
           display: inline-block;
           vertical-align: middle;
           margin-right: 10px;
