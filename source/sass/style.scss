@@ -1258,9 +1258,7 @@ ul {
       font-size: 16px;
       color: #fd5800;
     }
-    .checkbox {
-      margin-bottom: 0;
-    }
+
     a {
       text-decoration: underline;
       font-size: 13px;
@@ -1296,6 +1294,10 @@ ul {
   .btn-right {
     float: none;
   }
+}
+
+.imagen {
+  margin-bottom: 60px;
 }
 
 @include tablet {

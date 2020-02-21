@@ -50,6 +50,10 @@
                                                 input.form-control(type='email', placeholder='Correo')
                                             .form-group
                                                 input.form-control(type='password', placeholder='Contraseña')
+                                            .checkbox
+                                                label
+                                                    input(type='checkbox')
+                                                    |  He leido y acepto los términos y condiciones
                                             button.btn.btn-default(type='submit') Regístrate
                                         #login.tab-pane.active(role='tabpanel') 
                                          form(class="form")
@@ -65,4 +69,4 @@
                                                 label
                                                     input(type='checkbox')
                                                     |  Recordar mis datos
-                                            a(href="#") Olvide mi contraseña
+                                            a(href='#repassword', class="repassword" aria-controls='repassword', role='tab', data-toggle='tab') Olvide mi contraseña

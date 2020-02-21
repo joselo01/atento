@@ -6907,8 +6907,6 @@ ul {
     font-weight: 400;
     font-size: 16px;
     color: #fd5800; }
-  .tab-content .form .checkbox {
-    margin-bottom: 0; }
   .tab-content .form a {
     text-decoration: underline;
     font-size: 13px; }
@@ -6944,6 +6942,9 @@ ul {
     margin: 0 5px 0 0 !important; }
   .btn-right {
     float: none; } }
+
+.imagen {
+  margin-bottom: 60px; }
 
 @media (max-width: 768px) {
   .imagen {
