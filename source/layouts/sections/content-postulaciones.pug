@@ -15,7 +15,7 @@
                             li(class="phone") 960216626
                     .btn-info-postulant
                         a(href="#") Editar Perfil
-                        a(href="#") Cambiar Contraseña
+                        a(href="#" class="repassword" type='button', data-toggle='modal', data-target='#myModal3') Cambiar Contraseña
             .content-my-applications
                 .my-applications
                     |Mis postulaciones
@@ -140,6 +140,23 @@
                                             |Trujillo
                                     
                                     a(href="#" class="btn-ver-empleos") Ver empleos
+
+        #myModal3.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+                    .modal-dialog(role='document')
+                        .modal-content
+                            .modal-body
+                                div
+                                 .tab-content
+                                  .mensaje(class="olvidePass")
+                                    |Cambiar Contraseña
+                                  form(class="form")
+                                   .form-group
+                                     |Escribe tu nuea contraseña
+                                   .form-group
+                                     input.form-control(type='text', placeholder='Ingrese contraseña')
+                                   .form-group
+                                     input.form-control(type='text', placeholder='Repite la contraeeña')
+                                   button.btn.btn-default(type='submit' class="btn-dni") Guardar
                                 
 
 

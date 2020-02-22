@@ -69,4 +69,19 @@
                                                 label
                                                     input(type='checkbox')
                                                     |  Recordar mis datos
-                                            a(href='#repassword', class="repassword" aria-controls='repassword', role='tab', data-toggle='tab') Olvide mi contraseña
+                                            a(href="#" class="repassword" type='button', data-toggle='modal', data-target='#myModal2') Olvide mi contraseña
+                #myModal2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+                    .modal-dialog(role='document')
+                        .modal-content
+                            .modal-body
+                                div
+                                 .tab-content
+                                  .mensaje(class="olvidePass")
+                                    |Olvide Contraseña
+                                  form(class="form")
+                                   .form-group
+                                     |¿Cual es tu Número de Doc. de identidad?
+                                   .form-group
+                                     input.form-control(type='text', placeholder='Escribe tu DNI')
+                                   button.btn.btn-default(type='submit' class="btn-dni") Enviar
+                                   

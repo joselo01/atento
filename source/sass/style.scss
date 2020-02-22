@@ -775,7 +775,7 @@ ul {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     color: #fd5800;
-    font-size: 16px;
+    font-size: 14px;
     @include tablet {
       font-size: 13px;
     }
@@ -1226,9 +1226,30 @@ ul {
 .tab-content {
   .mensaje {
     margin: 20px 0 40px 0;
+    &.olvidePass {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: #13385e;
+      position: relative;
+      height: 80px;
+      line-height: 80px;
+      padding: 0 25px;
+      margin-bottom: 20px;
+      &:before {
+        content: "";
+        background: url("../images/icono_mas.png") no-repeat;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        margin-top: -15px;
+      }
+    }
   }
   .tab-pane {
-    padding: 0 35px;
+    padding: 0px;
     @include tablet {
       padding: 0;
     }
@@ -1247,6 +1268,14 @@ ul {
       height: 43px;
       font-size: 18px;
       font-family: "Roboto", sans-serif;
+      &.btn-dni {
+        width: 40%;
+        float: right;
+        @include tablet {
+          width: 100%;
+          float: none;
+        }
+      }
     }
     .spacer {
       height: 54px;
@@ -1256,6 +1285,9 @@ ul {
       font-family: "Roboto", sans-serif;
       font-weight: 400;
       font-size: 16px;
+      @include apaisada {
+        font-size: 14px;
+      }
       color: #fd5800;
     }
 
@@ -1303,5 +1335,26 @@ ul {
 @include tablet {
   .imagen {
     margin: 40px 0;
+  }
+}
+
+#myModal3 {
+  .modal-dialog {
+    width: 25%;
+
+    @include desktop {
+      width: 50%;
+    }
+
+    @include tablet {
+      width: auto;
+    }
+  }
+  .tab-content .form {
+    padding: 0px 45px 75px 45px;
+  }
+  .form-group {
+    margin-right: 0 !important;
+    font-size: 14px;
   }
 }

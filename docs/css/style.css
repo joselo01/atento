@@ -6477,7 +6477,7 @@ ul {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     color: #fd5800;
-    font-size: 16px;
+    font-size: 14px;
     margin: 15px 0;
     display: block; }
     @media (max-width: 768px) {
@@ -6878,9 +6878,28 @@ ul {
 
 .tab-content .mensaje {
   margin: 20px 0 40px 0; }
+  .tab-content .mensaje.olvidePass {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #13385e;
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 25px;
+    margin-bottom: 20px; }
+    .tab-content .mensaje.olvidePass:before {
+      content: "";
+      background: url("../images/icono_mas.png") no-repeat;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      margin-top: -15px; }
 
 .tab-content .tab-pane {
-  padding: 0 35px; }
+  padding: 0px; }
   @media (max-width: 768px) {
     .tab-content .tab-pane {
       padding: 0; } }
@@ -6899,6 +6918,13 @@ ul {
     height: 43px;
     font-size: 18px;
     font-family: "Roboto", sans-serif; }
+    .tab-content .form .btn.btn-default.btn-dni {
+      width: 40%;
+      float: right; }
+      @media (max-width: 768px) {
+        .tab-content .form .btn.btn-default.btn-dni {
+          width: 100%;
+          float: none; } }
   .tab-content .form .spacer {
     height: 54px; }
   .tab-content .form label {
@@ -6907,6 +6933,9 @@ ul {
     font-weight: 400;
     font-size: 16px;
     color: #fd5800; }
+    @media (max-width: 425px) {
+      .tab-content .form label {
+        font-size: 14px; } }
   .tab-content .form a {
     text-decoration: underline;
     font-size: 13px; }
@@ -6949,3 +6978,19 @@ ul {
 @media (max-width: 768px) {
   .imagen {
     margin: 40px 0; } }
+
+#myModal3 .modal-dialog {
+  width: 25%; }
+  @media (max-width: 1024px) {
+    #myModal3 .modal-dialog {
+      width: 50%; } }
+  @media (max-width: 768px) {
+    #myModal3 .modal-dialog {
+      width: auto; } }
+
+#myModal3 .tab-content .form {
+  padding: 0px 45px 75px 45px; }
+
+#myModal3 .form-group {
+  margin-right: 0 !important;
+  font-size: 14px; }

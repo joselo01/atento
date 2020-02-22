@@ -5,6 +5,9 @@ $(document).ready(function() {
   $("#myModal").on("shown.bs.modal", function() {
     $("#myInput").focus();
   });
+  $("#myModal2").on("show.bs.modal", function(e) {
+    $("#myModal").modal("hide");
+  });
   $("#myTabs a").on("click", function(e) {
     e.preventDefault();
     $(this).tab("show");
