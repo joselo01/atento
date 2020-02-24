@@ -6644,8 +6644,8 @@ ul {
     z-index: -1; }
   .form-registro .progressbar__estado li:first-child:after {
     content: none; }
-  .form-registro .progressbar__estado li:before {
-    background: #fd5800; }
+  .form-registro .progressbar__estado li.active:before {
+      background: #fd5800; }
   .form-registro .progressbar__estado li:first-child:before {
     background: white; }
   @media (max-width: 360px) {
