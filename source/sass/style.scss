@@ -780,7 +780,6 @@ ul {
       font-size: 13px;
     }
     margin: 15px 0;
-    display: block;
   }
 
   input {
@@ -805,7 +804,7 @@ ul {
     text-align: center;
     margin: 30px 0;
     @include tablet {
-      text-align: left;
+      text-align: center;
     }
     .btn-primary {
       font-family: "Roboto", sans-serif;
@@ -862,10 +861,14 @@ ul {
     width: 25%;
     float: left;
     font-size: 12px;
+    @include apaisada {
+      font-size: 10px;
+    }
     position: relative;
     text-align: center;
     text-transform: uppercase;
     color: #fd5800;
+    z-index: 99;
   }
   .progressbar li:before {
     width: 30px;
@@ -890,7 +893,16 @@ ul {
     border-top: 1px solid #fd5800;
     border-bottom: 1px solid #fd5800;
     top: 13px;
-    left: -50%;
+    left: -43%;
+    @include desktop {
+      left: -42%;
+    }
+    @include apaisada {
+      left: -31%;
+    }
+    @include mobile {
+      left: -30%;
+    }
     z-index: -1;
   }
   .progressbar li:first-child:after {
@@ -913,6 +925,9 @@ ul {
     width: 25%;
     float: left;
     font-size: 12px;
+    @include apaisada {
+      font-size: 10px;
+    }
     position: relative;
     text-align: center;
     text-transform: uppercase;

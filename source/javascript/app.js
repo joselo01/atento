@@ -14,14 +14,14 @@ $(document).ready(function() {
   });
   $(".input-group.date").datepicker({ format: "dd.mm.yyyy" });
 
-  $(".progressbar li").on("click", function() {
+  $(document).on("click", ".progressbar li", function() {
     $("li").removeClass("active");
     $(this).addClass("active");
   });
-  $(".showSec").on("click", function() {
+  $(document).on("click", ".showSec", function() {
     $(".content-estudios").show();
   });
-  $(".hideSec").on("click", function() {
+  $(document).on("click", ".hideSec", function() {
     $(".content-estudios").hide();
   });
 });
