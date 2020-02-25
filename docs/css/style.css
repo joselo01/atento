@@ -6195,6 +6195,9 @@ ul {
         display: block;
         color: white;
         text-decoration: none; }
+        @media (max-width: 1024px) {
+          .content-work-available .grid-work-available .content-my-applications .recent .btn-ver-empleos {
+            width: 50%; } }
         @media (max-width: 360px) {
           .content-work-available .grid-work-available .content-my-applications .recent .btn-ver-empleos {
             width: 50%; } }
@@ -6562,8 +6565,7 @@ ul {
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    color: #fd5800;
-    z-index: 99; }
+    color: #fd5800; }
     @media (max-width: 425px) {
       .form-registro .progressbar li {
         font-size: 10px; } }
@@ -6588,17 +6590,8 @@ ul {
     border-top: 1px solid #fd5800;
     border-bottom: 1px solid #fd5800;
     top: 13px;
-    left: -43%;
+    left: -50%;
     z-index: -1; }
-    @media (max-width: 1024px) {
-      .form-registro .progressbar li:after {
-        left: -42%; } }
-    @media (max-width: 425px) {
-      .form-registro .progressbar li:after {
-        left: -31%; } }
-    @media (max-width: 360px) {
-      .form-registro .progressbar li:after {
-        left: -30%; } }
   .form-registro .progressbar li:first-child:after {
     content: none; }
   .form-registro .progressbar li.active:before {
@@ -6644,7 +6637,7 @@ ul {
     z-index: -1; }
   .form-registro .progressbar__estado li:first-child:after {
     content: none; }
-  .form-registro .progressbar__estado li:before {
+  .form-registro .progressbar__estado li.active_e:before {
     background: #fd5800; }
   .form-registro .progressbar__estado li:first-child:before {
     background: white; }
@@ -6653,7 +6646,11 @@ ul {
       padding: 0; } }
 
 .content-estudios {
-  display: none; }
+  display: none;
+  clear: both; }
+
+.clear {
+  clear: both; }
 
 .img-gracias {
   text-align: center; }

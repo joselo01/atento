@@ -18,6 +18,11 @@ $(document).ready(function() {
     $("li").removeClass("active");
     $(this).addClass("active");
   });
+
+  $(document).on("click", ".progressbar__estado li", function() {
+    $("li").removeClass("active_e");
+    $(this).addClass("active_e");
+  });
   $(document).on("click", ".showSec", function() {
     $(".content-estudios").show();
   });

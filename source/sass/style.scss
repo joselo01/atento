@@ -443,6 +443,9 @@ ul {
         .btn-ver-empleos {
           padding: 8px;
           width: 35%;
+          @include desktop {
+            width: 50%;
+          }
           @include mobile {
             width: 50%;
           }
@@ -868,7 +871,6 @@ ul {
     text-align: center;
     text-transform: uppercase;
     color: #fd5800;
-    z-index: 99;
   }
   .progressbar li:before {
     width: 30px;
@@ -893,16 +895,7 @@ ul {
     border-top: 1px solid #fd5800;
     border-bottom: 1px solid #fd5800;
     top: 13px;
-    left: -43%;
-    @include desktop {
-      left: -42%;
-    }
-    @include apaisada {
-      left: -31%;
-    }
-    @include mobile {
-      left: -30%;
-    }
+    left: -50%;
     z-index: -1;
   }
   .progressbar li:first-child:after {
@@ -962,7 +955,8 @@ ul {
   .progressbar__estado li:first-child:after {
     content: none;
   }
-  .progressbar__estado li:before {
+
+  .progressbar__estado li.active_e:before {
     background: #fd5800;
   }
 
@@ -978,6 +972,11 @@ ul {
 
 .content-estudios {
   display: none;
+  clear: both;
+}
+
+.clear {
+  clear: both;
 }
 
 .img-gracias {
