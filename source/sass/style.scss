@@ -125,6 +125,9 @@ ul {
     no-repeat top left;
   background-size: contain;
   padding: 25px;
+  @include desktop {
+    padding: 10px 0;
+  }
   @include mobile {
     padding: 25px 20px;
   }
@@ -205,7 +208,7 @@ ul {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 12px;
-        @include mobile {
+        @include desktop {
           font-size: 11px;
         }
       }

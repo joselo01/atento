@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Atento</title>
+    <meta name="description" content="Atento">
+    <meta name="keywords" content="Atento">
+    <meta name="author" content="Atento">
+    <meta property="og:title" content="Atento">
+    <meta property="og:description" content="Atento">
+    <meta property="og:type" content="Web">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="content-left">
+              <div class="unete">Únete a la<br/> <span>Familia</span><span>Atento</span></div>
+              <div class="trabaja-nosotros">#TrabajaConNosotros</div>
+              <div class="logo-at-blanco"><img src="images/logo-azul-atento.png"></div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="content-right"><img src="images/img-right.png">
+              <div class="btn-postula"> <a href="#" type="button" data-toggle="modal" data-target="#myModal">Postula aquí</a></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="conocenos">CONÓCENOS</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list">
+            <li>FORMALIDAD</li>
+            <li>FAMILIA</li>
+            <li>ESCUELA</li>
+            <li>SOCIEDAD</li>
+          </ul>
+        </div>
+        <div class="col-md-12">
+          <div class="pie">
+            <div class="content-nav">
+              <div class="hamburger">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div><a class="btn-ver-empleos" href="#" type="button" data-toggle="modal" data-target="#myModal">Postula aquí</a>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div>
+                      <!-- Nav tabs-->
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation"><a href="#registro" aria-controls="registro" role="tab" data-toggle="tab">Registrate</a></li>
+                        <li class="active" role="presentation"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Iniciar sesión</a></li>
+                      </ul>
+                      <!-- Tab panes-->
+                      <div class="tab-content">
+                        <div class="mensaje"><img src="images/bienvenido-a-la-familia-atento.png"></div>
+                        <div class="tab-pane" id="registro" role="tabpanel"> 
+                          <form class="form">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Nombres y Apellido">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="DNI">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="tel" placeholder="Celular">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="email" placeholder="Correo">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="password" placeholder="Contraseña">
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> He leido y acepto los términos y condiciones
+                              </label>
+                            </div>
+                            <button class="btn btn-default" type="submit">Regístrate</button>
+                          </form>
+                        </div>
+                        <div class="tab-pane active" id="login" role="tabpanel"> 
+                          <form class="form">
+                            <div class="form-group">Ingresa con tu DNI</div>
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="DNI">
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="password" placeholder="Contraseña">
+                            </div>
+                            <div class="spacer"></div>
+                            <button class="btn btn-default" type="submit">Ingresar</button>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Recordar mis datos
+                              </label>
+                            </div><a class="repassword" href="#" type="button" data-toggle="modal" data-target="#myModal2">Olvide mi contraseña</a>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div>
+                      <div class="tab-content">
+                        <div class="mensaje olvidePass"><strong>Olvide </strong>Contraseña</div>
+                        <form class="form">
+                          <div class="form-group">¿Cual es tu Número de Doc. de identidad?</div>
+                          <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Escribe tu DNI">
+                          </div>
+                          <button class="btn btn-default btn-dni" type="submit">Enviar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="content-footer"></div>
+    </footer>
+    <script src="js/vendor/vendor_all.js"></script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
