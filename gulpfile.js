@@ -60,10 +60,10 @@ gulp.task("sass", function() {
     .pipe(
       sass({
         importer: compass,
-        outputStyle: "nested"
+        outputStyle: "compressed"
       })
     )
-    .pipe(entorno ? sass({ outputStyle: "nested" }) : gutil.noop())
+    .pipe(entorno ? sass({ outputStyle: "compressed" }) : gutil.noop())
     .pipe(
       prefix({
         browsers: [
